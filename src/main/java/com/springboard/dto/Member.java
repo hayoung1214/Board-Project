@@ -4,20 +4,20 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-//import org.hibernate.annotations.DynamicUpdate;
+import org.hibernate.annotations.DynamicUpdate;
 
-
+import javax.persistence.*;
 import java.io.Serializable;
 
 
-//@Entity
+@Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-//@DynamicUpdate
+@DynamicUpdate
 @Builder
 public class Member implements Serializable {
 
-//    @Id
-//    @GeneratedValue
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
 }
