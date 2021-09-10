@@ -20,4 +20,19 @@ public class Member implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "member_id", nullable = false)
+    private long memberId;
+
+    @Column(name = "id", nullable = false)
+    private String id;
+
+    @Column(name = "nickname", nullable = false)
+    private String nickname;
+
+    @Column(name = "pwd", nullable = false)
+    private String pwd;
+
+    @Column(name = "email", nullable = false)
+    private String email;
+
 }
