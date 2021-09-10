@@ -2,7 +2,7 @@ spring :
   datasource :
     url : jdbc:mysql://localhost:3306/spring_board
     username : root
-    password : lhy8732
+    password : password
   jpa :
     properties :
       hibernate :
